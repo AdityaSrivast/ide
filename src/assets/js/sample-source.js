@@ -7,17 +7,28 @@
  * Created by umair on 27/12/16.
  */
 
-const c_sample =
-  '#include <stdio.h>\n' +
-  'int main() {\n' +
-  '    printf("Hello World!");\n' +
-  '}\n';
+//Commenting out the languages supported by judge1 API and not judge2
+
+/* const c_sample =
+   '#include <stdio.h>\n' +
+   'int main() {\n' +
+   '    printf("Hello World!");\n' +
+   '}\n';*/
 
 const cpp_sample =
   '#include <iostream>\n' +
   'using namespace std;\n' +
   'int main() {\n' +
   '    cout<<"Hello World!";\n' +
+  '}\n';
+
+const cpp14_sample =
+  '#include <iostream>\n' +
+  '#include <cstdio>\n' +
+  'using namespace std;\n' +
+  'int main() {\n' +
+      'printf("Hello, World!");\n' +
+      'return 0;\n' +
   '}\n';
 
 const csharp_sample =
@@ -43,8 +54,8 @@ const java_sample =
 const py2_sample =
   'print("Hello World!")';
 
-const py3_sample =
-  'print("Hello World!")';
+/*const py3_sample =
+  'print("Hello World!")';*/
 
 const js_sample =
   `/* 
@@ -53,18 +64,21 @@ const js_sample =
 */
     console.log('Hello World');`;
 
-const ruby_sample = 'puts "Hello World!";'
+// const ruby_sample = 'puts "Hello World!";'
 
 const lang_samples = {
-  'C': c_sample,
+  // 'C': c_sample,
   'C++': cpp_sample,
+  'C++14': cpp14_sample,
   'C#': csharp_sample,
-  'Java': java_sample,
+  'Java7': java_sample,
+  'Java8': java_sample,
   'Python': py2_sample,
-  'Python3': py3_sample,
-  'Javascript': js_sample,
-  'NodeJs': js_sample,
-  'Ruby': ruby_sample
+  // 'Python3': py3_sample,
+  // 'Javascript': js_sample,
+  'NodeJs6': js_sample,
+  'NodeJs8': js_sample,
+  // 'Ruby': ruby_sample
 };
 
 export default lang_samples
